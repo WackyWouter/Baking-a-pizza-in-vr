@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
+    </contributor>
+    <created>2018-01-25T22:42:22</created>
+    <modified>2018-01-25T22:42:22</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <YF_dofdist sid="YF_dofdist" type="float">0</YF_dofdist>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_images/>
+  <library_effects>
+    <effect id="blinn10SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.19 0.09 0.06 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn2SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 0.83 0.04 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn13SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.14 0.04 0.47 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn9SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.07 0.43 0.08 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn12SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.33 0.02 0.43 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn7SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.9 0.06 0.04 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="blinn11SG-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0 0.33 0.78 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="blinn10SG-material" name="blinn10SG">
+      <instance_effect url="#blinn10SG-effect"/>
+    </material>
+    <material id="blinn2SG-material" name="blinn2SG">
+      <instance_effect url="#blinn2SG-effect"/>
+    </material>
+    <material id="blinn13SG-material" name="blinn13SG">
+      <instance_effect url="#blinn13SG-effect"/>
+    </material>
+    <material id="blinn9SG-material" name="blinn9SG">
+      <instance_effect url="#blinn9SG-effect"/>
+    </material>
+    <material id="blinn12SG-material" name="blinn12SG">
+      <instance_effect url="#blinn12SG-effect"/>
+    </material>
+    <material id="blinn7SG-material" name="blinn7SG">
+      <instance_effect url="#blinn7SG-effect"/>
+    </material>
+    <material id="blinn11SG-material" name="blinn11SG">
+      <instance_effect url="#blinn11SG-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="pasted__pCube12_group-mesh" name="pasted__pCube12 group">
+      <mesh>
+        <source id="pasted__pCube12_group-mesh-positions">
+          <float_array id="pasted__pCube12_group-mesh-positions-array" count="156">64.67302 -3.970154 74.71583 64.67302 3.970154 74.71583 -64.67302 3.970154 74.71583 -64.67302 -3.970154 74.71583 64.67302 3.970154 -74.71583 64.67302 -3.970154 -74.71583 -64.67302 -3.970154 -74.71583 -64.67302 3.970154 -74.71583 62.49237 4.902466 72.19656 -62.49237 4.902466 72.19656 62.49237 4.902466 -72.19657 -62.49237 4.902466 -72.19657 55.91252 3.970154 64.59495 55.91252 0.806305 64.59495 -55.91252 0.806305 64.59495 -55.91252 3.970154 64.59495 55.91252 3.970154 -64.59495 55.91252 0.806305 -64.59495 -55.91252 3.970154 -64.59495 -55.91252 0.806305 -64.59495 -57.77009 5.195221 66.74099 57.7701 5.195221 66.74099 -57.77009 5.195221 -66.74098 57.7701 5.195221 -66.74098 61.75285 6.806915 71.3422 58.83269 6.806915 67.96858 -58.83268 6.806915 67.96858 -61.75285 6.806915 71.3422 -58.83268 6.806915 -67.96858 -61.75285 6.806915 -71.3422 58.83269 6.806915 -67.96858 61.75285 6.806915 -71.3422 -51.16582 0.806305 -50.256 47.33015 0.806305 -50.256 47.33015 0.806305 47.38711 -51.16582 0.806305 47.38711 -35.78584 0.806305 30.7451 -2.732498 0.806305 30.7451 -2.732498 0.806305 -9.009232 -35.78584 0.806305 -9.009224 40.90053 0.806305 39.65401 -44.73621 0.806305 39.65401 40.90053 0.806305 -42.52289 -44.73621 0.806305 -42.52289 36.27328 0.806305 9.516732 36.27328 0.806305 -18.0198 16.56435 0.806305 -18.02361 16.56435 0.806305 9.515877 -10.31388 0.806305 -38.04682 -36.85983 0.806305 -38.04682 -36.86026 0.806305 -23.05191 -10.30115 0.806305 -23.05192</float_array>
+          <technique_common>
+            <accessor source="#pasted__pCube12_group-mesh-positions-array" count="52" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pasted__pCube12_group-mesh-normals">
+          <float_array id="pasted__pCube12_group-mesh-normals-array" count="177">0 0 1 0 0 -1 1 0 0 -1 0 0 0 0.9378399 0.3470681 0.3931155 0.9194892 0 0 0.9378397 -0.3470689 -0.3931185 0.9194878 0 0 0.8684599 -0.4957597 0.5505495 0.8348027 0 0 0.8684591 0.4957611 -0.5505498 0.8348024 0 0 1 0 0 0.4093095 0.9123956 0 0.6059271 -0.7955203 -0.9321868 0.3619778 0 0.8348758 0.5504386 0 0 0.409313 -0.9123941 0 0.605929 0.7955188 0.9321845 0.3619837 0 -0.8348782 0.5504348 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.93784 0.3470682 0.3931216 0.9194865 0 0 0.9378395 -0.3470693 -0.3931164 0.9194888 0 0 0.8684597 -0.4957599 0.550554 0.8347997 0 0 0.8684588 0.4957613 -0.5505492 0.8348028 0 0 1 0 0 1 0 0 0.4093099 0.9123954 0 0.6059268 -0.7955206 -0.9321835 0.3619863 0 0.8348768 0.550437 0 0 0.4093126 -0.9123943 0 0.6059296 0.7955184 0.9321858 0.3619804 0 -0.8348778 0.5504356 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#pasted__pCube12_group-mesh-normals-array" count="59" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pasted__pCube12_group-mesh-map-0">
+          <float_array id="pasted__pCube12_group-mesh-map-0-array" count="600">0.625 0.5 0.375 0.25 0.625 0.25 0.625 1 0.375 0.75 0.625 0.75 0.875 0 0.625 0.25 0.625 0 0.375 0 0.125 0.25 0.125 0 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.625 0.5 0.625 0.75 0.625 0.75 0.375 0.75 0.625 0.75 0.375 0.75 0.375 0.5 0.375 0.75 0.583333 0.520833 0.375 0.5 0.625 0.5 0.583333 0.729167 0.625 0.5 0.625 0.75 0.625 0.75 0.395833 0.708333 0.583333 0.729167 0.375 0.75 0.416667 0.520833 0.395833 0.708333 0.375 0.5 0.625 0.5 0.375 0.5 0.375 0.75 0.375 0.5 0.375 0.75 0.625 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.625 0.5 0.625 0.75 0.625 0.5 0.375 0.5 0.625 0.5 0.375 0.75 0.375 0.5 0.375 0.75 0.625 0.75 0.375 0.75 0.625 0.75 0.625 0.75 0.625 0.5 0.625 0.75 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.5 0.375 0.5 0.625 0.5 0.375 0.75 0.375 0.5 0.375 0.75 0.375 0.75 0.375 0.5 0.375 0.75 0.625 0.75 0.375 0.75 0.625 0.75 0.625 0.75 0.375 0.75 0.625 0.75 0.625 0.75 0.625 0.5 0.625 0.75 0.625 0.75 0.625 0.5 0.625 0.75 0.625 0 0.375 0.25 0.375 0 0.541667 0.666667 0.395833 0.708333 0.458333 0.666667 0.416667 0.520833 0.541667 0.583333 0.458333 0.583333 0.541667 0.583333 0.583333 0.729167 0.541667 0.666667 0.458333 0.583333 0.395833 0.708333 0.416667 0.520833 0.541667 0.583333 0.458333 0.666667 0.458333 0.583333 0.541667 0.583333 0.458333 0.583333 0.458333 0.583333 0.541667 0.583333 0.541667 0.666667 0.541667 0.583333 0.458333 0.666667 0.541667 0.666667 0.541667 0.666667 0.458333 0.583333 0.458333 0.666667 0.458333 0.666667 0.458333 0.583333 0.541667 0.583333 0.458333 0.583333 0.541667 0.666667 0.541667 0.583333 0.541667 0.583333 0.541667 0.666667 0.458333 0.666667 0.541667 0.666667 0.458333 0.583333 0.458333 0.666667 0.458333 0.666667 0.541667 0.666667 0.541667 0.583333 0.541667 0.583333 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.583333 0.541667 0.666667 0.541667 0.583333 0.541667 0.583333 0.541667 0.583333 0.458333 0.666667 0.541667 0.666667 0.541667 0.666667 0.458333 0.666667 0.458333 0.666667 0.458333 0.666667 0.458333 0.666667 0.541667 0.666667 0.458333 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.625 0.5 0.375 0.5 0.375 0.25 0.625 1 0.375 1 0.375 0.75 0.875 0 0.875 0.25 0.625 0.25 0.375 0 0.375 0.25 0.125 0.25 0.625 0.5 0.375 0.5 0.375 0.5 0.625 0.75 0.625 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.375 0.75 0.375 0.75 0.375 0.5 0.375 0.5 0.583333 0.520833 0.416667 0.520833 0.375 0.5 0.583333 0.729167 0.583333 0.520833 0.625 0.5 0.625 0.75 0.375 0.75 0.395833 0.708333 0.375 0.75 0.375 0.5 0.416667 0.520833 0.375 0.5 0.625 0.5 0.625 0.5 0.375 0.75 0.375 0.5 0.375 0.5 0.625 0.75 0.625 0.75 0.375 0.75 0.625 0.75 0.625 0.5 0.625 0.5 0.625 0.5 0.375 0.5 0.375 0.5 0.375 0.75 0.375 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.625 0.5 0.625 0.5 0.625 0.5 0.375 0.5 0.375 0.5 0.625 0.5 0.375 0.5 0.375 0.5 0.375 0.75 0.375 0.5 0.375 0.5 0.375 0.75 0.375 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.625 0.5 0.625 0.5 0.625 0.75 0.625 0.5 0.625 0.5 0.625 0 0.625 0.25 0.375 0.25 0.541667 0.666667 0.583333 0.729167 0.395833 0.708333 0.416667 0.520833 0.583333 0.520833 0.541667 0.583333 0.541667 0.583333 0.583333 0.520833 0.583333 0.729167 0.458333 0.583333 0.458333 0.666667 0.395833 0.708333 0.541667 0.583333 0.541667 0.666667 0.458333 0.666667 0.541667 0.583333 0.541667 0.583333 0.458333 0.583333 0.541667 0.583333 0.541667 0.666667 0.541667 0.666667 0.458333 0.666667 0.458333 0.666667 0.541667 0.666667 0.458333 0.583333 0.458333 0.583333 0.458333 0.666667 0.458333 0.583333 0.541667 0.583333 0.541667 0.583333 0.541667 0.666667 0.541667 0.666667 0.541667 0.583333 0.541667 0.666667 0.458333 0.666667 0.458333 0.666667 0.458333 0.583333 0.458333 0.583333 0.458333 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.583333 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.583333 0.541667 0.583333 0.541667 0.583333 0.541667 0.583333 0.541667 0.583333 0.458333 0.666667 0.458333 0.666667 0.541667 0.666667 0.458333 0.666667 0.458333 0.666667 0.458333 0.666667 0.458333 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667 0.541667 0.666667</float_array>
+          <technique_common>
+            <accessor source="#pasted__pCube12_group-mesh-map-0-array" count="300" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pasted__pCube12_group-mesh-vertices">
+          <input semantic="POSITION" source="#pasted__pCube12_group-mesh-positions"/>
+        </vertices>
+        <triangles material="blinn10SG-material" count="58">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 3 0 1 0 0 2 5 1 3 7 1 4 4 1 5 4 2 6 0 2 7 5 2 8 6 3 9 2 3 10 7 3 11 8 4 12 2 4 13 1 4 14 10 5 15 1 5 16 4 5 17 4 6 18 11 6 19 10 6 20 7 7 21 9 7 22 11 7 23 13 1 24 15 1 25 12 1 26 17 3 27 12 3 28 16 3 29 16 0 30 19 0 31 17 0 32 18 2 33 14 2 34 19 2 35 20 8 36 12 8 37 15 8 38 22 9 39 15 9 40 18 9 41 16 10 42 22 10 43 18 10 44 16 11 45 21 11 46 23 11 47 25 12 48 27 12 49 24 12 50 29 12 51 26 12 52 28 12 53 31 12 54 28 12 55 30 12 56 30 12 57 24 12 58 31 12 59 24 13 60 9 13 61 8 13 62 21 14 63 26 14 64 25 14 65 11 15 66 27 15 67 29 15 68 28 16 69 20 16 70 22 16 71 10 17 72 29 17 73 31 17 74 30 18 75 22 18 76 23 18 77 31 19 78 8 19 79 10 19 80 23 20 81 25 20 82 30 20 83 5 21 84 3 21 85 6 21 86 1 0 150 2 0 151 3 0 152 5 1 153 6 1 154 7 1 155 4 2 156 1 2 157 0 2 158 6 3 159 3 3 160 2 3 161 8 34 162 9 34 163 2 34 164 10 35 165 8 35 166 1 35 167 4 36 168 7 36 169 11 36 170 7 37 171 2 37 172 9 37 173 13 1 174 14 1 175 15 1 176 17 3 177 13 3 178 12 3 179 16 0 180 18 0 181 19 0 182 18 2 183 15 2 184 14 2 185 20 38 186 21 38 187 12 38 188 22 39 189 20 39 190 15 39 191 16 40 192 23 40 193 22 40 194 16 41 195 12 41 196 21 41 197 25 42 198 26 42 199 27 42 200 29 12 201 27 12 202 26 12 203 31 43 204 29 43 205 28 43 206 30 12 207 25 12 208 24 12 209 24 44 210 27 44 211 9 44 212 21 45 213 20 45 214 26 45 215 11 46 216 9 46 217 27 46 218 28 47 219 26 47 220 20 47 221 10 48 222 11 48 223 29 48 224 30 49 225 28 49 226 22 49 227 31 50 228 24 50 229 8 50 230 23 51 231 21 51 232 25 51 233 5 21 234 0 21 235 3 21 236</p>
+        </triangles>
+        <triangles material="blinn2SG-material" count="20">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>41 12 114 37 12 115 36 12 116 41 12 123 39 12 124 43 12 125 42 12 126 44 12 127 40 12 128 42 12 129 46 12 130 45 12 131 38 12 132 47 12 133 46 12 134 40 29 135 47 29 136 37 29 137 43 30 138 48 30 139 42 30 140 43 31 141 50 31 142 49 31 143 39 32 144 51 32 145 50 32 146 38 33 147 48 33 148 51 33 149 41 54 264 40 54 265 37 54 266 41 12 273 36 12 274 39 12 275 42 12 276 45 12 277 44 12 278 42 56 279 38 56 280 46 56 281 38 12 282 37 12 283 47 12 284 40 12 285 44 12 286 47 12 287 43 12 288 49 12 289 48 12 290 43 57 291 39 57 292 50 57 293 39 58 294 38 58 295 51 58 296 38 12 297 42 12 298 48 12 299</p>
+        </triangles>
+        <triangles material="blinn13SG-material" count="8">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>33 22 87 19 23 88 32 24 89 14 25 90 34 26 91 35 12 92 34 26 93 17 12 94 33 22 95 35 12 96 19 23 97 14 25 98 33 22 237 17 12 238 19 23 239 14 25 240 13 52 241 34 26 242 34 26 243 13 52 244 17 12 245 35 12 246 32 24 247 19 23 248</p>
+        </triangles>
+        <triangles material="blinn9SG-material" count="2">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>45 12 117 47 12 118 44 12 119 45 12 267 46 12 268 47 12 269</p>
+        </triangles>
+        <triangles material="blinn12SG-material" count="2">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>37 12 99 39 12 100 36 12 101 37 12 249 38 12 250 39 12 251</p>
+        </triangles>
+        <triangles material="blinn7SG-material" count="2">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>48 12 120 50 12 121 51 12 122 48 55 270 49 55 271 50 55 272</p>
+        </triangles>
+        <triangles material="blinn11SG-material" count="8">
+          <input semantic="VERTEX" source="#pasted__pCube12_group-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#pasted__pCube12_group-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#pasted__pCube12_group-mesh-map-0" offset="2" set="0"/>
+          <p>34 27 102 41 27 103 35 27 104 34 12 105 42 12 106 40 12 107 32 28 108 42 28 109 33 28 110 35 12 111 43 12 112 32 12 113 34 53 252 40 53 253 41 53 254 34 12 255 33 12 256 42 12 257 32 12 258 43 12 259 42 12 260 35 12 261 41 12 262 43 12 263</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.481132 0.7276763 0.3054208 -0.6141704 -6.50764 0 0.8953956 0.4452714 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="pasted__pCube12_group" name="pasted__pCube12_group" type="NODE">
+        <matrix sid="transform">0.02762113 0 0 0 0 -4.50005e-9 -0.02762113 0 0 0.02762113 -4.50005e-9 0 0 0 0 1</matrix>
+        <instance_geometry url="#pasted__pCube12_group-mesh" name="pasted__pCube12_group">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="blinn10SG-material" target="#blinn10SG-material"/>
+              <instance_material symbol="blinn2SG-material" target="#blinn2SG-material"/>
+              <instance_material symbol="blinn13SG-material" target="#blinn13SG-material"/>
+              <instance_material symbol="blinn9SG-material" target="#blinn9SG-material"/>
+              <instance_material symbol="blinn12SG-material" target="#blinn12SG-material"/>
+              <instance_material symbol="blinn7SG-material" target="#blinn7SG-material"/>
+              <instance_material symbol="blinn11SG-material" target="#blinn11SG-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

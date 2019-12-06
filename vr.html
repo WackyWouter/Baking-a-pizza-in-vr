@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/glow.js" charset="utf-8"></script>
+    <!-- <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v1.4.1/dist/aframe-physics-system.min.js"></script> -->
+    <script src="js/script.js" charset="utf-8"></script>
+
+
+    <title>GourmetVR</title>
+    <!-- <script>
+      AFRAME.registerComponent("move",{
+      schema : {
+        position : {type : "string"}
+      },
+      init : function(){
+        this.el.addEventListener("mouseenter",function(){
+                  var animation = document.createElement("a-animation");
+                  animation.setAttribute("attribute","position");
+                  animation.setAttribute("to",this.data.position);
+                  animation.setAttribute("dur","3000");
+                  animation.setAttribute("repeat","0");
+                  document.getElementById('camera').appendChild(animation);
+        }.bind(this));
+      }
+
+      });
+</script> -->
+  </head>
+  <body>
+    <a-scene id="scene"  >
+
+
+    <a-assets>
+      <a-asset-item id="knifeModal" src="models/knife2.dae"></a-asset-item>
+	    <a-asset-item id="boek" src="models/boek.dae"></a-asset-item>
+      <a-asset-item id="tafel" src = "models/tafel.obj"></a-asset-item>
+      <a-asset-item id="tafelm" src ="models/tafel.mtl"></a-asset-item>
+	    <a-asset-item id="cheeseCutModal" src="models/cutCheese.dae"></a-asset-item>
+      <a-asset-item id="cheeseModal" src="models/wholeCheese.dae"></a-asset-item>
+	    <a-asset-item id="cheesewheelModal" src="models/cutCheesewheel.dae"></a-asset-item>
+      <a-asset-item id="mushroomModal" src="models/mushroom.dae"></a-asset-item>
+      <a-asset-item id="mushroomSliceModal" src="models/mushroomslice.dae"></a-asset-item>
+      <a-asset-item id="mushroomSliceMultiModal" src="models/mushroomsliceMulti.dae"></a-asset-item>
+      <a-asset-item id="worstModal" src="models/worst.dae"></a-asset-item>
+      <a-asset-item id="worstSliceModal" src="models/worstSlice.dae"></a-asset-item>
+      <a-asset-item id="worstSliceMultiModal" src="models/worstSliceMulti.dae"></a-asset-item>
+      <a-asset-item id="kitchenCounterModel1" src="models/kitchenCounter1.dae"></a-asset-item>
+      <a-asset-item id="kitchenCounterModel2" src="models/kitchenCounter2.dae"></a-asset-item>
+      <a-asset-item id="openbookModal" src="models/openbook.dae"></a-asset-item>
+      <a-asset-item id="knifeHolderModal" src="models/knifeholder.dae"></a-asset-item>
+      <a-asset-item id="tomaatModal" src="models/tomaat.dae"></a-asset-item>
+      <a-asset-item id="trashcanModal" src="models/trashcan2.dae"></a-asset-item>
+      <a-asset-item id="ovenModal" src="models/stoneOven.dae"></a-asset-item>
+      <a-asset-item id="sinkModal" src="models/sink.dae"></a-asset-item>
+      <a-asset-item id="kraanModal" src="models/kraan.dae"></a-asset-item>
+      <a-asset-item id="bloemModal" src="models/bloem.dae"></a-asset-item>
+      <a-asset-item id="bowlModal" src="models/bowl.dae"></a-asset-item>
+      <a-asset-item id="zoutModal" src="models/zout.dae"></a-asset-item>
+      <a-asset-item id="spoonModal" src="models/spoon.dae"></a-asset-item>
+      <a-asset-item id="cupModal" src="models/cup.dae"></a-asset-item>
+      <a-asset-item id="tomatenBlikModal" src="models/blik.dae"></a-asset-item>
+      <a-asset-item id="deegrollerModal" src="models/deegroller.dae"></a-asset-item>
+      <a-asset-item id="wallpainting1Modal" src="models/wallpainting1.dae"></a-asset-item>
+      <a-asset-item id="wallpainting2Modal" src="models/wallpainting2.dae"></a-asset-item>
+    </a-assets>
+
+	  <a-entity>
+         <a-sound id="geluid" src="src: url(sounds/ratatouille.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+         <a-sound id="geluid2" src="src: url(sounds/blik.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+        <a-sound id="geluid3" src="src: url(sounds/chopping.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+        <a-sound id="geluid4" src="src: url(sounds/water.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+        <a-sound id="geluid5" src="src: url(sounds/true.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+        <a-sound id="geluid6" src="src: url(sounds/false.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+         <a-sound id="geluid7" src="src: url(sounds/eindgeluid.mp3)" autoplay="false"> </a-sound>
+      </a-entity>
+      <a-entity>
+         <a-sound id="geluid8" src="src: url(sounds/ding.mp3)"  position="27.637 5.126 -3.739" autoplay="false"> </a-sound>
+      </a-entity>
+
+
+      <a-plane src="texture/floor3.jpg" height="30" width="50" rotation="-90 0 0" position="2.334 -3 -5" repeat="3"> </a-plane>
+            <a-plane src="texture/tegels.jpg" height="20" width="30" rotation=" 0 90 0" position="-15 6.5 -5" repeat="4 4"> </a-plane>
+            <a-plane src="texture/tegels.jpg" height="20" width="30" rotation=" 0 -90 0" position="27.258 5.5 -5" repeat="4 4"> </a-plane>
+            <a-plane src="texture/tegels.jpg" height="20" width="45" position="5 5.5 -20" repeat="4 4"> </a-plane>
+            <a-plane src="texture/tegels.jpg" height="20" width="45" position="5 5.5 10" rotation="0 180 0" repeat="4 4"> </a-plane>
+            <a-plane src="texture/plafond.jpg" height="35" width="50" rotation=" 90 0 0" position="3 15 -5" repeat="4 4"> </a-plane>
+
+      <!-- camera's -->
+  			<a-camera id="camera" active="true" position="-12 2.3 -7.0" rotation="-16.736 -90 0">
+          <!-- <a-cursor id="cursor" color="red"></a-cursor> -->
+            <a-entity position="0 0 -2" id="cursor" material="color: #439DC2;"
+                geometry="primitive: ring; radiusOuter: 0.036; radiusInner: 0.02; thetaLength: 360; thetaStart: 90;"
+                cursor="fuse: true; maxDistance: 500; timeout: 3000;">
+                <a-animation begin="pulse" end="stopPulse" attribute="geometry.thetaLength" dur="2000" fill="forwards" from="360" to="0" easing="ease-in"></a-animation>
+                <a-animation begin="reset" attribute="geometry.thetaLength" fill="backwards" from="0" to="360" dur="0"></a-animation>
+            </a-entity>
+            <a-entity geometry="primitive: ring; radiusOuter: 0.036; radiusInner: 0.02;"
+				    material="color: red;" position="0 0 -2.0001" id="cursor-loader"></a-entity>
+        </a-camera>
+
+
+  <a-entity id="pizzaKitchen" scale="1.5 1.5 1.5" position="-3.55 2 0">
+
+        <!-- krijtborden -->
+      <a-entity id="boord1" position="11.254 2.5 6.621" rotation="0 180 0">
+        <a-plane  src="texture/chalkboard.jpg" height="4" width="6"> </a-plane>
+      </a-entity>
+      <a-entity id="boord2" position="20.5 2.5 -1.5" rotation="0 -90 0">
+        <a-plane src="texture/chalkboard.jpg" height="4" width="6"> </a-plane>
+      </a-entity>
+      <!-- <a-entity id="logo" position="18.0 2.8 -8.13" rotation="0 -90 0">
+        <a-plane src="texture/logo.png" height="2" width="3"> </a-plane>
+      </a-entity> -->
+      <a-entity id="wallpainting1" collada-model="#wallpainting1Modal" position="5.021 1.047 6.647" rotation="0 90 0" scale="0.85 0.85 0.85"></a-entity>
+      <a-entity id="wallpainting2" collada-model="#wallpainting2Modal" position="5.73 2.22 -13.24" rotation="90 0 0" scale="0.7 0.7 0.7"></a-entity>
+
+        <!-- tafel & boek obj -->
+        <a-entity id="boek2" collada-model="#boek" position="-3.0 -1.108 -5" scale="0.5 0.5 0.5" rotation="-70 -90 0"></a-entity>
+  		<a-obj-model src="#tafel" color="#964C0D" position="-2.5 -3.534 -5"></a-obj-model>
+
+
+
+
+      <!-- oven -->
+      <a-entity collada-model="#ovenModal" id="oven" scale="0.9 0.9 0.9" position="11 -0.95 -10">
+        <a-cylinder id="toggleHeat" height="0.2" radius="0.2" color="blue" rotation="270 0 0" position="1.0 0.2 2"></a-cylinder>
+        <a-cylinder id="toggleOven" height="0.2" radius="0.2" color="red" rotation="270 0 0" position="1.6 0.2 2"></a-cylinder>
+        <a-text id="heat" value="temperatuur: 250 graden" scale="1.2 1.2 1.2" position="-1.5 -0.5 2" color="white"></a-text>
+        <a-entity id="holder" position = "-1.5 -1 2"  rotation="0 0 0" scale="1.2 1.2 1.2">
+
+        </a-entity>
+      </a-entity>
+      <a-circle id="placer" color="white"  radius="0.5" position="11 -0.262 -10" rotation="270 0 0"></a-circle>
+
+      <!-- aanrecht -->
+      <a-entity collada-model="#kitchenCounterModel1" id="kitchenCounter1" position="15 -1.3 -4" rotation="0 -90 0"></a-entity>
+      <a-entity collada-model="#kitchenCounterModel2" id="kitchenCounter1" position="15 -1.3 0" rotation="0 -90 0"></a-entity>
+      <!-- sink -->
+      <a-entity collada-model="#sinkModal" id="sink" position="15 -1.3 2" rotation="0 -90 0"></a-entity>
+      <!-- kraan -->
+      <a-entity collada-model="#kraanModal" id="kraan" position="15.5 0 2" rotation="0 180 0"></a-entity>
+      <!-- water -->
+      <a-cylinder id="water" radius="0.045" color="#0181FF" position="15 15 15"> </a-cylinder>
+
+
+        <!-- teksten  -->
+        <a-entity position = "20.23 2.8 -4" rotation="0 -90 0">
+            <a-text id="text1" value="Rechts kan je de ingredienten zien die nodig zijn voor de pizza." color="white">
+            </a-text>
+        </a-entity>
+        <!-- info -->
+        <a-entity position = "20.27 1.8 -4" rotation="0 -90 0">
+            <a-text id="instructies" value="Voor het pizzadeeg: \n Pak het gist en doe die in de kom. \n Pak daarna het bloem. \n En tenslotte het zout." color="white">
+            </a-text>
+        </a-entity>
+        <!-- ingredienten -->
+        <a-entity position = "13.313 2.0 6.55" rotation="0 180 0">
+            <a-text id="ingredientenText" value="" color="white">
+            </a-text>
+        </a-entity>
+
+        <!-- trashcan -->
+        <a-entity  collada-model="#trashcanModal" id="trashcan" position="13.99 -3.289 -6" scale="1 1.2 1" rotation="0 45 0"></a-entity>
+
+        <!-- pizza -->
+        <a-entity id="pizza" position="15 15 15" >
+          <a-sphere id="glow" glow="enabled:false; scale:1.3; color:#f90000;" position="0 0 0" radius="0.4" opacity="0"></a-sphere>
+          <a-circle  id="pizzadeegklaar" src="texture/pizza.jpg" radius="0.2" position="0 0 0" rotation="270 0 0 " >
+            <a-animation  begin="deegroller" attribute='radius' to='0.5' dur='1000' repeat='0'></a-animation>
+          </a-circle>
+          <a-circle id="ingredient1" position="0 0.001 0" src="" rotation="270 0 0" radius="0.45" visible="false">
+            <a-animation  begin="spread" attribute='radius' to='0.45' dur='1000' repeat='0'></a-animation>
+          </a-circle>
+          <a-animation id='aniPos' begin="start"  end="stop" attribute='position' to='11 -0.25 -10' dur='1000' repeat='0'></a-animation>
+          <a-animation id='aniRot' begin="start" end="stop" attribute='rotation' to='0 0 0' dur='1000' repeat='0'></a-animation>
+        </a-entity>
+
+        <a-entity id="pizzaDone" position="15 15 15" rotation="-45 0 0" >
+          <a-circle  id="pizzadeegklaar" color="#934820" radius="0.5" position="0 0 0" rotation="0 0 0 " >
+          </a-circle>
+          <a-circle  src="texture/cheeseAndSauce.jpg" position="-0.010 -0.010 0.020" src="" rotation="0 0 0" radius="0.45" visible="true">
+          </a-circle>
+        </a-entity>
+
+        <!-- burned pizza -->
+        <a-circle radius='0.5' id='blackPizza' position='15 15 15' rotation='0 0 0' color='black' ></a-circle>
+
+        <!-- tomato -->
+        <a-entity  collada-model="#tomatenBlikModal" id="tomato" position="15 0.15 -0.55" rotation="0 180 0" scale="0.2 0.2 0.2"></a-entity>
+        <!-- cheese -->
+        <a-entity collada-model="#cheeseModal" id="cheese" scale="0.4 0.4 0.4" position="15 0.15 -0.7" rotation="90 0 0"></a-entity>
+        <a-entity collada-model='#cheeseCutModal' id='Cheeseslice' scale='0.4 0.4 0.4' position='15 15 15' rotation='30 0 0' ></a-entity>
+        <a-entity collada-model='#cheesewheelModal' id='cheeseCut' scale='0.4 0.4 0.4' position='15 15 15' rotation='90 0 0'></a-entity>
+        <!-- mushroom -->
+        <a-entity collada-model="#mushroomModal" id="mushroom" scale="0.2 0.2 0.2" position="15 -0.20 0"></a-entity>
+        <a-entity collada-model='#mushroomSliceModal' id='mushroomSlice' scale='0.3 0.3 0.3' position='15 15 15'></a-entity>
+        <!-- worst -->
+        <a-entity collada-model="#worstModal" id="worst" scale="0.15 0.15 0.15"  position="15 -0.25 -0.2"></a-entity>
+        <a-entity collada-model='#worstSliceModal' id='worstSlice' scale='0.3 0.3 0.3' position='15 15 15'> </a-entity>
+        <!-- black pizza -->
+        <a-circle radius='0.5' id='blackPizza' position='15 15 15' rotation='0 0 0' color='black' ></a-circle>
+        <!-- pizza holder -->
+        <a-entity position="15 15 15" id="pizzaHolder"></a-entity>
+        <!-- bloem -->
+        <a-entity collada-model="#bloemModal" id="bloem"  position="17.487 -1.292 -1.07"  scale="0.55 0.55 0.55" rotation="0 -90 0"></a-entity>
+
+        <!-- pizzadeeg kom -->
+        <a-entity collada-model="#bowlModal" id="bowl" position="14.7 -0.3 -3.4"></a-entity>
+        <!-- zout -->
+        <a-entity collada-model="#zoutModal" id="zout" position="14.55 -0.095 -4.47"></a-entity>
+        <!-- lepelhouder & lepel -->
+        <a-entity id="lepelBundle" position="15 -0.95 -0.68">
+          <a-entity collada-model="#spoonModal" id="spoon" scale="0.7 0.5 0.65" position="0.336 1.44 -3.85" rotation="0 180 -90" ></a-entity>
+          <a-entity collada-model="#cupModal" id="cup" scale="0.3 0.45 0.4" position="0.399 0.700 -3.84"></a-entity>
+        </a-entity>
+
+        <!-- deegroller -->
+        <a-entity id="deegrollerHolder" position="14.362 -0.529 -4.408">
+          <a-entity collada-model="#deegrollerModal" id="deegroller" position="0 0 0" scale="0.25 0.25 0.25"></a-entity>
+        </a-entity>
+        <!-- gist -->
+        <a-plane id="gist" height="0.5" width="0.4" position="14.7 0 -2.3" rotation="-20 -95 0" src="texture/gist.png"> </a-plane>
+
+        <!-- bloem in bowl -->
+        <a-circle radius='0.4' id='bloemBowl' src="texture/bloem.jpg"  position='15 15 15' rotation='270 0 0'></a-circle>
+        <!-- gist in bowl -->
+        <a-circle radius='0.2' id='gistBowl' src="texture/gist.jpg"  position='15 15 15' rotation='270 0 0'></a-circle>
+        <!-- zout op de gist-->
+        <a-circle radius='0.2' id='zoutBowl' src="texture/zoutgist.jpg"  position='15 15 15' rotation='270 0 0'></a-circle>
+
+        <!-- water & deeg -->
+        <a-circle radius='0.4' id='waterdeeg' src="texture/waterdeeg.jpg"  position='15 15 15' rotation='270 0 0'></a-circle>
+
+        <!-- lepel animation -->
+        <a-entity id="roeren" position="14.7 0.22 -3.4" visible="false">
+           <a-sphere position="0.5 0 0" color="transparent" radius="0.007"></a-sphere>
+          <a-animation id="roeren2" attribute="rotation"
+                       dur="3000"
+                       fill="forwards"
+                       to="0 360 0"
+                       repeat="indefinite"></a-animation>
+        </a-entity>
+
+
+
+
+
+          <!-- knife -->
+          <a-entity id="knifeBundle" position="15 -0.95 0">
+            <a-entity  collada-model="#knifeModal" id="knife" scale="0.15 0.15 0.15" rotation="0 180 80"  position="0.010 1.240 0.580" ></a-entity>
+            <!-- <a-box id="knifeHolder"  color="yellow" height=" 0.03" depth="0.3 " width="1"  position="0 0.72 0.5" ></a-box> -->
+            <a-entity  collada-model="#knifeHolderModal" id="knifeHolder" scale="0.3 0.3 0.3" rotation="0 180 0"    position="0 0.923 0.75" ></a-entity>
+          </a-entity>
+      </a-entity>
+
+
+
+    </a-scene>
+  </body>
+</html>

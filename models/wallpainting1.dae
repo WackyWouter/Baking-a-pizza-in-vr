@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
+    </contributor>
+    <created>2018-01-25T22:41:26</created>
+    <modified>2018-01-25T22:41:26</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <YF_dofdist sid="YF_dofdist" type="float">0</YF_dofdist>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_images/>
+  <library_effects>
+    <effect id="_39BE5-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.011765 0.607843 0.898039 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_95548-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.47451 0.333333 0.282353 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_55A64-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.270588 0.352941 0.392157 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="FF9800-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 0.596078 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="FFFFFF-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="FFEB3B-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 0.921569 0.231373 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">49</float>
+            </shininess>
+            <reflective>
+              <color>1 1 1 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="_39BE5-material" name="_39BE5">
+      <instance_effect url="#_39BE5-effect"/>
+    </material>
+    <material id="_95548-material" name="_95548">
+      <instance_effect url="#_95548-effect"/>
+    </material>
+    <material id="_55A64-material" name="_55A64">
+      <instance_effect url="#_55A64-effect"/>
+    </material>
+    <material id="FF9800-material" name="FF9800">
+      <instance_effect url="#FF9800-effect"/>
+    </material>
+    <material id="FFFFFF-material" name="FFFFFF">
+      <instance_effect url="#FFFFFF-effect"/>
+    </material>
+    <material id="FFEB3B-material" name="FFEB3B">
+      <instance_effect url="#FFEB3B-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Wall_Painting_01_Plane_002-mesh" name="Wall_Painting_01_Plane.002">
+      <mesh>
+        <source id="Wall_Painting_01_Plane_002-mesh-positions">
+          <float_array id="Wall_Painting_01_Plane_002-mesh-positions-array" count="363">-0.08844 0.01205199 4.402013 -0.08844 10.0525 4.402013 -0.08844 10.0525 -4.402013 -0.08844095 0.01205199 -4.402013 0.496148 9.161267 -3.620533 0.496148 9.161267 3.620533 0.566937 8.924513 3.412934 0.566937 8.924513 -3.412934 0.55045 9.898161 4.266685 0.55045 9.898161 -4.266685 0.550449 0.166386 -4.266685 0.55045 0.166386 4.266685 0.566936 1.140036 -3.412934 0.07077097 8.787102 -3.292444 0.07076996 1.277447 -3.292444 0.496148 0.903282 3.620533 0.496148 0.903282 -3.620533 0.566937 1.140036 3.412933 0.07076996 1.277447 3.292444 0.07077097 8.787102 3.292444 0.55045 9.377257 3.809925 0.55045 0.687292 3.809925 0.550449 0.687292 -3.809925 0.55045 9.377257 -3.809925 0.39819 3.827746 -0.501627 0.398187 3.378723 -0.792209 0.398187 3.668109 -1.101552 0.39819 4.7285 -1.078349 0.34581 2.92641 1.635035 0.34581 2.645375 1.354783 0.345811 2.888793 1.059205 0.34581 3.52328 1.029553 0.398187 3.358766 -1.420874 0.39819 3.7419 -1.857607 0.34581 2.680149 0.711465 0.34581 2.968541 0.46681 0.125842 4.4774 0.53045 0.125842 4.572165 0.665829 0.125842 4.206642 0.72675 0.125842 4.294639 0.523681 0.125842 4.585704 0.902743 0.125842 4.423249 1.065198 0.125842 4.200577 2.762582 0.125842 4.633087 1.004277 0.125842 4.782004 1.099043 0.125842 4.829386 1.329187 0.125842 4.714314 1.511949 0.125842 4.703538 2.458466 0.125842 4.924151 1.437491 0.125842 4.972564 2.51695 0.125842 5.19491 1.478104 0.125842 5.288376 2.44677 0.125842 5.452131 1.674404 0.125842 5.452131 2.236228 0.125842 5.540127 1.958701 0.125842 4.855596 2.563737 0.125842 4.294151 3.055001 0.125842 4.937473 2.84446 0.125842 4.598267 3.148575 0.125842 4.843899 3.078395 0.39819 5.98931 -0.317327 0.39819 5.806548 -0.310558 0.39819 5.718552 -0.513627 0.39819 6.084076 -0.452706 0.39819 6.097614 -0.68962 0.39819 5.935159 -0.852075 0.39819 5.712487 -2.549459 0.39819 6.144996 -0.791155 0.39819 6.293914 -0.88592 0.39819 6.341296 -1.116064 0.39819 6.226223 -1.298826 0.39819 6.215448 -2.245343 0.39819 6.484473 -2.303827 0.39819 6.436062 -1.224368 0.39819 6.800286 -2.233647 0.39819 6.70682 -1.264982 0.39819 6.964041 -2.023105 0.39819 6.964041 -1.461282 0.39819 7.052037 -1.745577 0.39819 5.806061 -2.841878 0.39819 6.367506 -2.350614 0.39819 6.110177 -2.935452 0.39819 6.449383 -2.631336 0.39819 6.355809 -2.865272 0.34581 0.296462 4.302933 0.34581 0.296462 -2.243826 0.39819 0.522863 1.614377 0.39819 0.522863 -4.40014 0.39819 6.5374 1.708065 0.39819 6.835566 1.409899 0.39819 6.835566 1.831569 0.39819 7.133732 1.708065 0.39819 7.257237 1.409899 0.39819 7.133732 1.111732 0.39819 6.835566 0.988228 0.39819 6.5374 1.111732 0.39819 6.413896 1.409898 0.39819 7.354578 1.850344 0.39819 7.87266 2.446992 0.39819 7.276012 1.92891 0.39819 6.835566 2.87657 0.39819 6.780012 2.088337 0.39819 6.891121 2.088337 0.39819 6.395121 1.92891 0.39819 5.798473 2.446992 0.39819 6.316555 1.850344 0.39819 5.368895 1.409898 0.39819 6.157128 1.354344 0.39819 6.157128 1.465453 0.39819 6.780012 0.73146 0.39819 6.835566 -0.05677294 0.39819 6.891121 0.73146 0.39819 7.87266 0.372805 0.39819 7.354578 0.969452 0.39819 7.276011 0.890887 0.39819 7.514005 1.354344 0.39819 8.30224 1.409899 0.39819 7.514005 1.465453 0.39819 5.798473 0.372805 0.39819 6.395121 0.890887 0.39819 6.316555 0.969453</float_array>
+          <technique_common>
+            <accessor source="#Wall_Painting_01_Plane_002-mesh-positions-array" count="121" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wall_Painting_01_Plane_002-mesh-normals">
+          <float_array id="Wall_Painting_01_Plane_002-mesh-normals-array" count="420">-1 0 0 -1 0 0 -1 0 0 0.95809 0.2864674 0 0.9580898 0.2864682 0 0.9580898 0.2864682 0 0.2348133 0.9720406 0 0.2348133 0.9720405 0 0.2348133 0.9720405 0 0.2348118 -0.9720409 0 0.2348118 -0.9720409 0 0.2348118 -0.9720408 0 0.2072193 0 -0.9782946 0.2072201 0 -0.9782944 0.2072193 0 -0.9782946 0.2072193 0 0.9782946 0.2072201 0 0.9782944 0.2072202 0 0.9782944 0.2359827 0 0.9717574 0.2359833 0 0.9717572 0.2359827 0 0.9717573 0.9580914 -0.2864629 -1.36037e-7 0.95809 -0.2864676 0 0.95809 -0.2864677 0 0.9464874 -1.2612e-7 -0.3227412 0.946488 0 -0.3227391 0.9464881 0 -0.3227391 0.9464876 0 0.3227404 0.9464868 0 0.3227426 0.9464868 0 0.3227426 0.2359805 0 -0.9717578 0.2359832 0 -0.9717571 0.2359833 0 -0.9717571 0.2668995 -0.9637244 0 0.2668995 -0.9637244 0 0.2668988 0.9637246 0 0.2668992 0.9637245 0 0.2668987 0.9637246 0 0.961269 0 -0.2756123 0.9612687 0 -0.275613 0.9612687 0 -0.275613 0.961269 0 0.2756121 0.96127 0 0.2756083 0.9612701 0 0.2756083 0.969821 0.2438181 0 0.96982 0.2438219 -1.25644e-7 0.96982 0.2438219 -1.27321e-7 0.96982 -0.243822 0 0.9698199 -0.2438226 0 0.9698199 -0.2438226 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1.3314e-7 0 1 -1.33241e-7 0 1 -1.32588e-7 0 1 -3.22354e-6 -4.48783e-6 1 -2.44788e-6 -1.28653e-7 1 -2.80412e-6 0 1 0 8.75412e-7 1 -1.03254e-6 0 1 1.58712e-6 0 1 -3.24022e-6 3.8236e-6 1 0 -8.87733e-7 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -1.46392e-7 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -8.80927e-7 -5.55663e-7 1 -9.6311e-7 4.74724e-7 1 4.78539e-7 -6.76931e-7 1 -1.38234e-6 1.88752e-6 1 -1.53207e-6 -2.4009e-6 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 1.70144e-7 0 -1 0 0 0.95809 0.2864674 0 0.2348118 -0.9720409 0 0.2072202 0 -0.9782944 0.2072193 0 0.9782946 0.2359833 0 0.9717571 0.9580915 -0.2864627 -1.41745e-7 0.9464873 -1.30909e-7 -0.3227412 0.9464876 0 0.3227404 0.2359803 0 -0.9717578 0.2668993 0.9637245 0 0.961269 0 -0.2756122 0.961269 0 0.2756122 0.969821 0.2438179 0 0.96982 -0.243822 0 1 -1.33793e-7 0 1 0 0 1 0 0 1 3.77154e-7 6.32278e-7</float_array>
+          <technique_common>
+            <accessor source="#Wall_Painting_01_Plane_002-mesh-normals-array" count="140" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wall_Painting_01_Plane_002-mesh-vertices">
+          <input semantic="POSITION" source="#Wall_Painting_01_Plane_002-mesh-positions"/>
+        </vertices>
+        <triangles material="_39BE5-material" count="2">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>14 58 19 59 18 60 14 58 13 136 19 59</p>
+        </triangles>
+        <triangles material="_95548-material" count="42">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>1 0 3 1 0 2 5 3 7 4 4 5 1 6 9 7 2 8 3 9 11 10 0 11 3 12 9 13 10 14 0 15 8 16 1 17 12 18 13 19 14 20 16 21 17 22 15 23 4 24 12 25 16 26 15 27 6 28 5 29 17 30 19 31 6 32 6 33 13 33 7 34 17 35 14 36 18 37 21 38 5 39 20 40 23 41 16 42 22 43 22 44 15 45 21 46 20 47 4 48 23 49 8 50 23 51 9 52 10 53 21 54 11 55 9 52 22 56 10 53 8 50 21 54 20 57 1 0 2 121 3 1 5 3 6 122 7 4 1 6 8 6 9 7 3 9 10 123 11 10 3 12 2 124 9 13 0 15 11 125 8 16 12 18 7 126 13 19 16 21 12 127 17 22 4 24 7 128 12 25 15 27 17 129 6 28 17 30 18 130 19 31 6 33 19 34 13 33 17 35 12 131 14 36 21 38 15 132 5 39 23 41 4 133 16 42 22 44 16 134 15 45 20 47 5 135 4 48 8 50 20 57 23 51 10 53 22 56 21 54 9 52 23 51 22 56 8 50 11 55 21 54</p>
+        </triangles>
+        <triangles material="_55A64-material" count="10">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>85 107 34 108 29 109 86 110 32 111 25 112 85 107 35 68 34 108 34 108 30 65 29 109 29 109 28 64 84 138 84 138 85 107 29 109 86 110 87 139 32 111 32 111 26 62 25 112 87 139 33 67 32 111 25 112 24 61 86 110</p>
+        </triangles>
+        <triangles material="FF9800-material" count="8">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>97 72 98 72 99 72 100 72 101 72 102 72 103 72 104 72 105 72 106 72 107 72 108 72 109 72 110 72 111 72 112 72 113 72 114 72 115 72 116 72 117 72 118 120 119 120 120 120</p>
+        </triangles>
+        <triangles material="FFFFFF-material" count="52">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>24 61 26 62 27 63 28 64 30 65 31 66 26 62 33 67 27 63 30 65 35 68 31 66 37 69 39 70 36 71 37 69 40 72 38 73 40 72 41 74 38 73 38 73 41 74 42 75 43 76 44 77 41 74 44 77 45 72 41 74 45 72 46 78 41 74 41 74 46 78 42 75 46 78 49 79 47 80 49 79 50 81 51 82 51 82 52 83 53 72 54 72 53 72 52 83 46 78 47 80 42 75 42 75 55 84 56 85 55 84 58 86 56 85 59 87 58 86 57 88 61 89 63 90 60 72 63 90 62 91 64 92 64 92 62 91 65 93 62 91 66 94 65 93 67 95 65 93 68 96 68 96 65 93 69 72 69 72 65 93 70 97 65 93 66 94 70 97 72 98 70 97 71 99 72 98 75 100 73 101 74 102 77 103 75 100 78 72 77 103 76 72 70 97 66 94 71 99 66 94 80 104 71 99 81 105 80 104 79 72 83 72 82 106 81 105 24 61 25 112 26 62 28 64 29 109 30 65 26 62 32 111 33 67 30 65 34 108 35 68 37 69 38 73 39 70 46 78 48 137 49 79 49 79 48 137 50 81 51 82 50 81 52 83 42 75 47 80 55 84 55 84 57 88 58 86 61 89 62 91 63 90 72 98 73 101 70 97 72 98 74 102 75 100 74 102 76 72 77 103 66 94 79 72 80 104 81 105 82 106 80 104</p>
+        </triangles>
+        <triangles material="FFEB3B-material" count="8">
+          <input semantic="VERTEX" source="#Wall_Painting_01_Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Painting_01_Plane_002-mesh-normals" offset="1"/>
+          <p>88 72 89 113 90 114 91 115 89 113 92 72 92 72 89 113 93 116 94 117 89 113 95 118 96 119 89 113 88 72 90 114 89 113 91 115 93 116 89 113 94 117 95 118 89 113 96 119</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.481132 0.7276763 0.3054208 -0.6141704 -6.50764 0 0.8953956 0.4452714 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Wall_Painting_01_Plane_002" name="Wall_Painting_01_Plane_002" type="NODE">
+        <matrix sid="transform">0.2961179 0 0 0 0 -4.82437e-8 -0.2961179 0 0 0.2961179 -4.82437e-8 0 0 0 0 1</matrix>
+        <instance_geometry url="#Wall_Painting_01_Plane_002-mesh" name="Wall_Painting_01_Plane_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_39BE5-material" target="#_39BE5-material"/>
+              <instance_material symbol="_95548-material" target="#_95548-material"/>
+              <instance_material symbol="_55A64-material" target="#_55A64-material"/>
+              <instance_material symbol="FF9800-material" target="#FF9800-material"/>
+              <instance_material symbol="FFFFFF-material" target="#FFFFFF-material"/>
+              <instance_material symbol="FFEB3B-material" target="#FFEB3B-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

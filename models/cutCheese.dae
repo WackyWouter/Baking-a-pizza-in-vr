@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
+    </contributor>
+    <created>2017-12-04T16:41:02</created>
+    <modified>2017-12-04T16:41:02</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <YF_dofdist sid="YF_dofdist" type="float">0</YF_dofdist>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_images/>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 0.7454044 0.01599629 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided sid="double_sided" type="int">1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 0.783538 0.1441285 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided sid="double_sided" type="int">1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_001-material" name="Material_001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cylinder_001-mesh" name="Cylinder.001">
+      <mesh>
+        <source id="Cylinder_001-mesh-positions">
+          <float_array id="Cylinder_001-mesh-positions-array" count="57">-0.7412312 -0.495274 -0.9664356 -0.7412312 -0.495274 -0.415032 -0.8236119 -0.3411504 -0.9664356 -0.8236119 -0.3411504 -0.415032 -0.8743415 -0.1739165 -0.9664356 -0.8743415 -0.1739165 -0.415032 -0.8914707 8.95371e-7 -0.9664356 -0.8914707 8.95371e-7 -0.415032 -0.83147 -0.5555697 -0.5106499 -0.9238799 -0.3826827 -0.5106499 -0.9807854 -0.1950894 -0.5106499 -1 9.65599e-7 -0.5106499 -0.83147 -0.5555697 -0.8689596 -0.9238799 -0.3826827 -0.8689596 -0.9807854 -0.1950894 -0.8689596 -1 9.65599e-7 -0.8689596 5.06639e-7 3.57628e-7 -0.415032 -1.19209e-7 3.27826e-7 -0.9664356 5.06639e-7 3.57628e-7 -0.9664356</float_array>
+          <technique_common>
+            <accessor source="#Cylinder_001-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cylinder_001-mesh-normals">
+          <float_array id="Cylinder_001-mesh-normals-array" count="51">0.1492063 -0.9843223 -0.09405887 -0.8458207 -0.3503347 0.4023096 -0.2856025 -0.9017324 0.324515 -0.9018343 -0.3735211 -0.2172031 -0.8979144 -0.1786001 0.4023081 -0.9573758 -0.190407 -0.2172025 -0.6760618 -0.6742917 0.2971046 -0.6768263 -0.6749951 -0.2937481 -0.8997105 -0.1789349 -0.3981249 -0.8475044 -0.3510388 -0.3981308 -0.2860532 -0.9028697 -0.3209363 0.09909772 -0.6803167 -0.726188 -0.3482578 -0.144235 -0.9262358 -0.3697119 -0.07352119 -0.9262331 -0.2849591 -0.65464 -0.7001748 0.284869 -0.9390851 -0.1922729 -0.3930514 -0.91535 -0.08743631</float_array>
+          <technique_common>
+            <accessor source="#Cylinder_001-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cylinder_001-mesh-vertices">
+          <input semantic="POSITION" source="#Cylinder_001-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="24">
+          <input semantic="VERTEX" source="#Cylinder_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cylinder_001-mesh-normals" offset="1"/>
+          <p>1 0 9 1 8 2 3 3 10 4 9 1 5 5 11 6 10 4 10 4 15 7 14 8 9 1 14 8 13 9 8 2 13 9 12 10 0 11 13 9 2 12 2 12 14 8 4 13 4 13 15 7 6 14 5 5 16 15 3 3 2 12 4 13 17 15 1 0 3 3 9 1 3 3 5 5 10 4 5 5 7 16 11 6 10 4 11 6 15 7 9 1 10 4 14 8 8 2 9 1 13 9 0 11 12 10 13 9 2 12 13 9 14 8 4 13 14 8 15 7 1 0 3 3 16 15 5 5 7 16 16 15 6 14 17 15 4 13 0 11 2 12 17 15</p>
+        </triangles>
+        <triangles material="Material-material" count="8">
+          <input semantic="VERTEX" source="#Cylinder_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cylinder_001-mesh-normals" offset="1"/>
+          <p>6 14 17 15 7 16 0 11 17 15 1 0 7 16 11 6 15 7 15 7 6 14 7 16 17 15 16 15 7 16 1 0 8 2 12 10 12 10 0 11 1 0 17 15 16 15 1 0</p>
+        </triangles>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.481132 0.7276763 0.3054208 -0.6141704 -6.50764 0 0.8953956 0.4452714 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Cylinder_001" name="Cylinder_001" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0.416111 0 0 0 1</matrix>
+        <instance_geometry url="#Cylinder_001-mesh" name="Cylinder_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material"/>
+              <instance_material symbol="Material-material" target="#Material-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

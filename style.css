@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Roboto;
+  src:url(Roboto-Regular.ttf);
+}
+body {
+  background: url(image/background.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  font-family: Roboto;
+}
+#button{
+  text-decoration: none;
+  padding:25px;
+  color: white;
+  background-color: rgba(0,0,0, 0.68);
+  width:20%;
+  height: 4%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top:50%;
+  left:50%;
+  font-size: 150%;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 1s;
+}
+
+#button:hover{
+  background-color: rgba(0,0,0, 1);
+}
+
+
+#naam{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top:15%;
+  left:50%;
+  font-size:400%;
+
+}
+
+@media screen and (max-width: 1310px) {
+    #button {
+        width:30%;
+    }
+}
+@media screen and (max-width: 950px) {
+    #button {
+        width:45%;
+        height: 5%;
+    }
+}
+@media screen and (max-width: 590px) {
+    #button {
+        width:55%;
+        height: 6%;
+        top:65%;
+    }
+    #name{
+      top:10%;
+    }
+}
+@media screen and (max-width: 589px) {
+    #button {
+        height: 14%;
+    }
+}
