@@ -147,7 +147,7 @@ window.onload = function(){
         startLoader();
         timer2 = setTimeout(function(){
           pizzaKind = 0;
-          ingredientenPizza = "Ingredients: \n \n cheese \n  tomatosauce \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
+          ingredientenPizza = "Ingredients: \n \n cheese \n  tomatosauce \n  half a bag of yeast \n 250gr flower \n  half a teaspoon of salt \n  150ml water";
           changeIngredients();
           walk();
         },time);
