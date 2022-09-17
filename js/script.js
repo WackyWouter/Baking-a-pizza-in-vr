@@ -65,7 +65,7 @@ window.onload = function(){
   function checkReady() {//margherita
     if(pizzaKind == 0){
       if (addedCheese && addedTomatoSauce){
-        $("#instructies").attr( "value", "Nu zijn we klaar met de pizza beleggen. Pak de pizza op en doe hem in de steenoven, links van je.");
+        $("#instructies").attr( "value", "Now that we are done with making th pizza, put it into the oven on your left.");
         document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         makingDone = true;
         light(0);
@@ -73,7 +73,7 @@ window.onload = function(){
     }
     else if (pizzaKind == 1) {//funghi
       if (addedCheese && addedTomatoSauce && addedChampignon){
-        $("#instructies").attr( "value", "Nu zijn we klaar met de pizza beleggen. Pak de pizza op en doe hem in de steenoven, links van je.");
+        $("#instructies").attr( "value", "Now that we are done with making th pizza, put it into the oven on your left.");
         document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         makingDone = true;
         light(0);
@@ -81,7 +81,7 @@ window.onload = function(){
     }
     else if (pizzaKind == 2) {//salami
       if (addedCheese && addedTomatoSauce && addedWorst){
-        $("#instructies").attr( "value", "Nu zijn we klaar met de pizza beleggen. Pak de pizza op en doe hem in de steenoven, links van je.");
+        $("#instructies").attr( "value", "Now that we are done with making th pizza, put it into the oven on your left.");
         document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         makingDone = true;
         light(0);
@@ -90,7 +90,7 @@ window.onload = function(){
     else if (pizzaKind == 3) {//speciale
       if (addedCheese && addedTomatoSauce && addedWorst && addedChampignon){
         makingDone = true;
-        $("#instructies").attr( "value", "Nu zijn we klaar met de pizza beleggen. Pak de pizza op en doe hem in de steenoven, links van je.");
+        $("#instructies").attr( "value", "Now that we are done with making th pizza, put it into the oven on your left.");
         document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         light(0);
       }
@@ -147,7 +147,7 @@ window.onload = function(){
         startLoader();
         timer2 = setTimeout(function(){
           pizzaKind = 0;
-          ingredientenPizza = "Ingredienten: \n \n kaas \n  tomatensaus \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
+          ingredientenPizza = "Ingredients: \n \n cheese \n  tomatosauce \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
           changeIngredients();
           walk();
         },time);
@@ -162,7 +162,7 @@ window.onload = function(){
         startLoader();
         timer2 = setTimeout(function(){
           pizzaKind = 1;
-          ingredientenPizza = "Ingredienten: \n \n kaas \n  tomatensaus \n  champignon \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
+          ingredientenPizza = "Ingredienten: \n \n cheese \n  tomatosauce \n  mushroom \n  half a bag of yeast \n  250gr flower \n   half a teaspoon of salt \n  150ml water";
           changeIngredients();
           walk();
         },time);
@@ -177,7 +177,7 @@ window.onload = function(){
         startLoader();
         timer2 = setTimeout(function(){
           pizzaKind = 2;
-          ingredientenPizza = " Ingredienten: \n \n kaas \n  tomatensaus \n  salami \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
+          ingredientenPizza = " Ingredienten: \n \n cheese \n  tomatosauce \n  salami \n  half a bag of yeast \n  250gr flower \n   half a teaspoon of salt \n  150ml water";
           changeIngredients();
           walk();
         },time);
@@ -192,7 +192,7 @@ window.onload = function(){
         startLoader();
           timer2 = setTimeout(function(){
           pizzaKind = 3;
-          ingredientenPizza = "Ingredienten: \n \n  kaas \n  tomatensaus \n  salami \n  champignon \n  0.5 zakje gist \n  250gr bloem \n   0.5 theeleper zout \n  150ml water";
+          ingredientenPizza = "Ingredienten: \n \n  cheese \n  tomatosauce \n  salami \n  mushroom \n  half a bag of yeast \n  250gr flower \n   half a teaspoon of salt \n  150ml water";
           changeIngredients();
           walk();
         },time);
@@ -319,7 +319,7 @@ window.onload = function(){
            zout.setAttribute("position","15 15 15");
            zoutInBowl = true;
            holdingZout = false;
-           $("#instructies").attr( "value", "Voeg nu water toe. \n Pak de kom op en doe de kraan aan. \n Vergeet de kraan daarna niet uit te doen.");
+           $("#instructies").attr( "value", "Now, add water. \n Pickup the bowl and turn on the faucet. \n Don't forget to turn of the faucet.");
            document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         }, time);
       }
@@ -377,7 +377,7 @@ window.onload = function(){
          spoon.setAttribute("rotation", "0 180 -90");
          bowl.setAttribute("position", "15 15 15");
          $("#pizza").attr("position", "14.75 -0.20 -3");
-         $("#instructies").attr( "value", "Pak nu de deegroller op om het deeg uit te rollen.");
+         $("#instructies").attr( "value", "Get the rolling pin and roll out the dough.");
          document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
          theNeedtospreadDeeg = true;
          holdingSpoon = false;
@@ -396,7 +396,7 @@ window.onload = function(){
         deegHalf = true;
         setTimeout(function(){
           bowl.setAttribute("position", "14.7 -0.3 -3.4");
-          $("#instructies").attr( "value", "Pak de lepel op en roer in de kom.");
+          $("#instructies").attr( "value", "Get the spoon and stir the bowl.");
           document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
         },3000);
       }
@@ -488,7 +488,7 @@ window.onload = function(){
      $("#ingredient1").attr("radius", "0.2");
      $("#pizzaKitchen").append($("#tomato"));
      $("#tomato").attr("position", "15 15 15");
-     $("#instructies").attr( "value", "Pak de lepel op en verspreid de tomatensaus over de pizza.");
+     $("#instructies").attr( "value", "Get the spoon and spread out the tomatosauce.");
      document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
      holdingTomato = false;
      addedTomatoSauce = true;
@@ -581,7 +581,7 @@ window.onload = function(){
            $("#pizzaKitchen").append($("#deegrollerHolder"));
            $("#deegrollerHolder").attr("position", "14.362 -0.529 -4.408");
          },1000);
-         $("#instructies").attr( "value", "Nu gaan we de tomatensaus doen. Pak de tomatensaus in blik op.");
+         $("#instructies").attr( "value", "Now it is time for the tomatosauce. Pickup the can of tomatosoup.");
          document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
          holdingDeegroller = false;
          theNeedtospreadDeeg = false;
@@ -590,7 +590,7 @@ window.onload = function(){
      else if (theNeedtospread == true && holdingSpoon == true ){
         timer = setTimeout(function(){
           document.querySelector("#ingredient1").emit("spread");
-          $("#instructies").attr( "value", "Nu komt de kaas.Leg de lepel terug, pak het mes op en snijd de kaas.");
+          $("#instructies").attr( "value", "Now comes the cheese. Put back the sppon, then pick up the knife and cut the cheese with it.");
           document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
           theNeedtospread = false;
         }, time);
@@ -645,7 +645,7 @@ window.onload = function(){
        else if (addedTomatoSauce && holdingCheese) {
          timer = setTimeout(function(){
            addCheese();
-           $("#instructies").attr( "value", "Snijd nu de champignon en doe die op de pizza.");
+           $("#instructies").attr( "value", "Cut the mushrooms and put it on the pizza.");
            document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
          }, time);
        }
@@ -683,7 +683,7 @@ window.onload = function(){
        }
        else if (addedTomatoSauce && holdingCheese) {
          timer = setTimeout(function(){
-           $("#instructies").attr( "value", "Snijd nu de worst en doe die op de pizza.");
+           $("#instructies").attr( "value", "Cut the sausage and put it on the pizza.");
            document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
             addCheese();
          }, time);
@@ -722,7 +722,7 @@ window.onload = function(){
        }
        else if (addedTomatoSauce && holdingCheese) {
           timer = setTimeout(function(){
-            $("#instructies").attr( "value", "Snijd nu de worst en doe die op de pizza.");
+            $("#instructies").attr( "value", "Cut the sausage and put it on the pizza.");
             document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
            addCheese();
           }, time);
@@ -731,7 +731,7 @@ window.onload = function(){
        else if (holdingWorst && addedCheese && addedTomatoSauce) {
           timer = setTimeout(function(){
            addWorst();
-           $("#instructies").attr( "value", "Snijd nu de champignon en doe die op de pizza.");
+           $("#instructies").attr( "value", "Cut the mushrooms and put it on the pizza.");
            document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
           }, time);
        }
@@ -853,7 +853,7 @@ window.onload = function(){
           $("#pizzaKitchen").append(pizza);
           $("#pizza").attr("position", "11.5 0.5 -4");
            document.querySelector('#pizza').emit('start');
-           $("#instructies").attr( "value", "De blauwe knop is om de temperatuur van de oven aan te passen. De rode knop is om de oven aan te zetten. \n Kies nu of je de oven op 250 of 200 graden zet. Kijk uit je kan hem aanbranden.");
+           $("#instructies").attr( "value", " The blue button is to change the temperature of the oven. The red button is to turn on the oven. \n Now choose if you want to cook the pizza on 250 or 200 degrees. Watchout, you can burn your pizza!");
            document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
           setTimeout(function(){
             holdingPizza = false;
@@ -865,7 +865,7 @@ window.onload = function(){
       			xhttp.onreadystatechange = function(){
       				if(this.readyState == 4 && this.status == 200){
       					var response = JSON.parse(this.responseText);
-                var tekst = $("<a-text id='text5' value='pizza speciale: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
+                var tekst = $("<a-text id='text5' value='pizza Special: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
       					$('#holder').append(tekst);
       				}
       		  }
@@ -877,7 +877,7 @@ window.onload = function(){
             xhttp.onreadystatechange = function(){
       				if(this.readyState == 4 && this.status == 200){
       					var response = JSON.parse(this.responseText);
-                var tekst = $("<a-text id='text5' value='pizza funghi: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
+                var tekst = $("<a-text id='text5' value='pizza Funghi: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
       					$('#holder').append(tekst);
       				}
       		  }
@@ -890,7 +890,7 @@ window.onload = function(){
             xhttp.onreadystatechange = function(){
               if(this.readyState == 4 && this.status == 200){
                 var response = JSON.parse(this.responseText);
-                var tekst = $("<a-text id='text5' value='pizza salami: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
+                var tekst = $("<a-text id='text5' value='pizza Salami: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
                 $('#holder').append(tekst);
               }
             }
@@ -903,7 +903,7 @@ window.onload = function(){
             xhttp.onreadystatechange = function(){
               if(this.readyState == 4 && this.status == 200){
                 var response = JSON.parse(this.responseText);
-                var tekst = $("<a-text id='text5' value='pizza margherita: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
+                var tekst = $("<a-text id='text5' value='pizza Margherita: " + response.product.nutriments.energy + " kcal' color='white'></a-tekst");
                 $('#holder').append(tekst);
               }
             }
@@ -928,7 +928,7 @@ window.onload = function(){
         if(pizzaInOven){
           // burn the pizza
           if( heatValues[heatInc] == 250 && pizzaInOven ){
-            $("#instructies").attr( "value", "Oeps de pizza is aangebrand. Gooi hem maar snel in de prullenbak en probeer het opnieuw.");
+            $("#instructies").attr( "value", "Owh no you burned the pizza! Throw in it in the trash and start over.");
             document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
             document.getElementById('geluid5').innerHTML = ('<a-sound src= url(sounds/false.mp3)" autoplay="true" volume="2"> </a-sound>');
             $("#pizzaHolder").append($("#pizza"));
@@ -938,7 +938,7 @@ window.onload = function(){
           }
           else if (heatValues[heatInc] == 200 && pizzaInOven){
               document.getElementById('geluid7').innerHTML = ('<a-sound src="url(sounds/eindgeluid.mp3)" autoplay="true" volume="1" loop="true"> </a-sound>');
-              $("#instructies").attr( "value", "Goed gedaan! Je kan nu pizza maken!!!");
+              $("#instructies").attr( "value", "Well done!!! You now know how to make pizza.");
               document.getElementById('geluid8').innerHTML = ('<a-sound src= url(sounds/ding.mp3)" autoplay="true" volume="2"> </a-sound>');
               $("#pizzaHolder").append($("#pizza"));
               if(pizzaKind == 1){

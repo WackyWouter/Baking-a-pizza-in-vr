@@ -31,6 +31,13 @@ body {
   background-color: rgba(0,0,0, 1);
 }
 
+#help {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
 
 #naam{
   transform: translate(-50%, -50%);
